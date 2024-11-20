@@ -1,0 +1,142 @@
+/* Definir o background da página */
+body {
+    background-color: rgb(235, 233, 154); /* Cor de fundo da página */
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Estilizar o card */
+.card {
+    background-color: rgb(240, 239, 195); /* Cor de fundo do card */
+    width: 90%; /* A largura do card será 90% da tela */
+    max-width: 900px; /* Limitar a largura máxima do card */
+    margin: 20px auto; /* Centralizar o card na tela */
+    padding: 20px;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6); /* Sombra suave */
+}
+
+/* Imagem do card */
+.card img {
+    width: 100%; /* A imagem ocupa toda a largura do card */
+    border-radius: 8px; /* Bordas arredondadas na imagem */
+}
+
+/* Títulos principais dentro do card */
+h1 {
+    font-size: 2em;
+    color: #333; /* Cor escura para o título */
+    text-align: center; /* Alinhar o título ao centro */
+    margin-top: 20px;
+}
+
+/* Parágrafo descritivo */
+p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Estilização das seções como Tempo de Preparação, Ingredientes, etc. */
+section {
+    list-style-position: inside;  /* Coloca o número dentro do bloco do item */
+    padding-left: 0;  /* Remove o padding padrão à esquerda */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Listas dentro do card */
+ul, ol {
+    text-align: center;
+    margin-left: 20px;
+}
+
+ul li, ol li {
+    text-align: center;
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Tabela de nutrição */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+
+table th {
+    background-color: rgb(220, 220, 180); /* Cor de fundo para os cabeçalhos */
+}
+
+/* Estilos gerais */
+h2, h3 {
+    text-align: center;
+    font-size: 1.5em;
+    color: #444;
+}
+
+strong {
+    font-weight: bold;
+}
+
+/* Responsividade para telas pequenas (Mobile) */
+@media (max-width: 768px) {
+    /* Ajustar a largura do card em telas menores */
+    .card {
+        width: 95%; /* Card ocupa 95% da largura da tela em dispositivos móveis */
+        padding: 15px; /* Reduzir o padding do card */
+    }
+
+    h1 {
+        font-size: 1.8em; /* Ajustar o tamanho da fonte para o título em telas menores */
+    }
+
+    p {
+        font-size: 1em; /* Reduzir o tamanho do texto para dispositivos móveis */
+    }
+
+    table th, table td {
+        font-size: 0.9em; /* Reduzir o tamanho da fonte da tabela para telas pequenas */
+        padding: 8px; /* Reduzir o padding nas células da tabela */
+    }
+
+    h2, h3 {
+        font-size: 1.3em; /* Ajustar o tamanho das fontes dos subtítulos */
+    }
+}
+
+/* Responsividade para telas muito pequenas (Mobile Portrait) */
+@media (max-width: 480px) {
+    /* Ajustar ainda mais o layout para telas muito pequenas */
+    .card {
+        width: 100%; /* Card ocupa 100% da largura da tela */
+        padding: 10px; /* Diminuir o padding do card */
+    }
+
+    h1 {
+        font-size: 1.6em; /* Ajustar o título para telas pequenas */
+    }
+
+    p {
+        font-size: 0.9em; /* Ajustar o tamanho do parágrafo */
+    }
+
+    table th, table td {
+        font-size: 0.85em; /* Ajustar o tamanho da tabela */
+        padding: 6px; /* Reduzir ainda mais o padding nas células */
+    }
+
+    h2, h3 {
+        font-size: 1.2em; /* Ajustar os subtítulos */
+    }
+}
